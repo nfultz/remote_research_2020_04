@@ -13283,6 +13283,91 @@ a.anchor-link {
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exporting">Exporting<a class="anchor-link" href="#Exporting">&#182;</a></h2><p><a href="https://nbconvert.readthedocs.io/en/latest/usage.html#supported-output-formats">Supported Formats</a>:</p>
+<ul>
+<li>PDF</li>
+<li>Slides</li>
+<li>Latex</li>
+<li>Code Modules (see also "Literate Programming" / Knuth)</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter nbconvert slides.ipynb <span class="err">\</span>
+  <span class="o">--</span><span class="n">to</span> <span class="n">slides</span>  \
+  <span class="o">--</span><span class="n">no</span><span class="o">-</span><span class="n">prompt</span> \
+  <span class="o">--</span><span class="n">TagRemovePreprocessor</span><span class="o">.</span><span class="n">remove_input_tags</span><span class="o">=</span><span class="p">{</span>\<span class="s2">&quot;to_remove</span><span class="se">\&quot;</span><span class="s2">} </span><span class="se">\</span>
+<span class="s2">  --SlidesExporter.reveal_theme=simple </span><span class="se">\</span>
+<span class="s2">  --output index.html                                               </span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook slides.ipynb to slides
+[NbConvertApp] Writing 318463 bytes to index.html.slides.html
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="GitHub">GitHub<a class="anchor-link" href="#GitHub">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> git commit -m <span class="s2">&quot;&quot;</span> slides.ipynb index.html
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span> git push origin master
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://nfultz.github.io/remote_research_2020_04/">https://nfultz.github.io/remote_research_2020_04/</a></p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Computing-resources">Computing resources<a class="anchor-link" href="#Computing-resources">&#182;</a></h2><h3 id="UCLA">UCLA<a class="anchor-link" href="#UCLA">&#182;</a></h3><ul>
 <li><a href="https://idre.ucla.edu/hoffman2">Hoffman</a> - IDRE</li>
 <li><a href="https://ccpr.ucla.edu/services/computing/">TS2</a> - CCPR (Windows)</li>
